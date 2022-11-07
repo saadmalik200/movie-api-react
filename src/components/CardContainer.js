@@ -22,9 +22,13 @@ const CardContainer = ({ item }) => {
 
   return (
     <div className="w-[80%] mx-auto">
-      <div className="flex gap-[2rem] border-2 border-red-500 my-5">
+      <div className="flex gap-[2rem] border-2 border-slate-500 my-5">
         <div className="w-full flex">
-          <img className="w-[600px] h-[600px]" src={post.Poster} alt="" />
+          <img
+            className="w-[600px] h-[600px] clip-your-needful-style"
+            src={post.Poster}
+            alt=""
+          />
         </div>
         <div className="">
           <h2 className="text-[4rem]">MOVIE DETAILS</h2>
