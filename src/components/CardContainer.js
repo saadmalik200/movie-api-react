@@ -22,7 +22,7 @@ const CardContainer = ({ item }) => {
 
   return (
     <div>
-      <div>
+      <div className="flex border-2 border-red-500 my-5">
         <div>
           <img src={post.Poster} alt="" />
         </div>
@@ -46,7 +46,7 @@ const CardContainer = ({ item }) => {
           <div>
             <ul className="flex gap-2 ">
               {post.Genre.split(",").map((item, i) => (
-                <li className="border-4 border-black" key={i}>
+                <li className="border-4 border-black rounded-md px-3" key={i}>
                   {item}
                 </li>
               ))}
