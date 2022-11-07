@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="flex justify-center items-center ">
       <div className="flex mt-[2rem] justify-center flex-col items-center">
-        <div className=" border-2  p-2 flex items-center gap-[20px] mb-[2rem] justify-center h-full">
+        <div className=" border-2  p-2 flex items-center gap-[20px] mb-[2rem] justify-center h-full text-[2rem]">
           <input
             value={search}
             className="border-2"
