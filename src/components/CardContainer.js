@@ -14,11 +14,11 @@ const CardContainer = ({ item }) => {
       );
       const data = await response.json();
       setPost({ ...data });
-      console.log("SingleData", data);
+      //   console.log("SingleData", data);
     };
 
     getData();
-  }, []);
+  }, [item.imdbID]);
 
   return (
     <div>
@@ -45,7 +45,7 @@ const CardContainer = ({ item }) => {
 
           <div>
             <ul className="flex gap-2 ">
-              {post.Genre.split(",").map((item, i) => (
+              {post?.Genre?.split(",").map((item, i) => (
                 <li className="border-4 border-black rounded-md px-3" key={i}>
                   {item}
                 </li>

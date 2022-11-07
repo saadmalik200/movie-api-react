@@ -5,7 +5,6 @@ import { Context } from "./Context";
 const Card = () => {
   const { state, dispatch } = useContext(Context);
 
-  console.log("Here", state.movies);
   return (
     <div>
       {state?.movies?.map((item, i) => (
