@@ -21,13 +21,13 @@ const CardContainer = ({ item }) => {
   }, [item.imdbID]);
 
   return (
-    <div>
-      <div className="flex border-2 border-red-500 my-5">
-        <div>
-          <img src={post.Poster} alt="" />
+    <div className="w-[80%] mx-auto">
+      <div className="flex gap-[2rem] border-2 border-red-500 my-5">
+        <div className="w-full flex">
+          <img className="w-[600px] h-[600px]" src={post.Poster} alt="" />
         </div>
-        <div>
-          <h2>MOVIE DETAILS</h2>
+        <div className="">
+          <h2 className="text-[4rem]">MOVIE DETAILS</h2>
           <hr />
           <h1>{post.Title}</h1>
           <p>Released Date: {post.Released}</p>
